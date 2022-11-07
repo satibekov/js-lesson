@@ -9,39 +9,26 @@
 </head>
 <body>
 
-<div class="wrapper">
-    <input type="text"name="todo-list-task-text"
-    id="todo-list-task-text" placeholder="ВАША ЗАДАЧА НА 1ДЕНЬ">
-    <Button id="todo-list-task-add-btn">дабавит</Button>
-    <select name="todo-list-task-filter" id="todo-list-task-filter"></select>
-    <option value="0">Все</option>
-    <option value="1">Выполненные</option>
-    <option value="2">Не Выполненные</option>   
-     </select>
-          <ul class="todo-list" id="todo-list">
-                 <li class="todolist-tot completed">
-                     <span>
-                          <input type="checkbox" id="todolist-checkbox-1">
-                           
-                           <label for="todolist-checkbox-1">Сделать Д3
-                           </label>
-                     </span>
-                        <button class="todolist-remove-todo">Delete</button>
-                 </li>
-          </ul>         
-</div>
+    <div class="counter">
+        <button class="inc">Increment</button>
+        <span class="count">0</span>
+        <button class="dec" onclick=(dec())>Decrement</button>
+    </div>
 
 
-
-
-
-
-
-
-
-
-
-
+    <div class="wrapper">
+        <input type="text" name="todo-list-task-text" id="todo-list-task-text" placeholder="Ваша задача на 1 день">
+        <button id="todo-list-task-add-btn">Добавить</button>
+        <select name="todo-list-task-filter" id="todo-list-task-filter">
+            <option value="0">Все</option>
+            <option value="1">Выполненные</option>
+            <option value="2">Не выполненные</option>
+        </select>
+        <ul class="todo-list" id="todo-list">
+            
+        </ul>
+    </div>
 </body>
 <script src="./main.js"></script>
 </html>
+
