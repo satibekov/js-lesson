@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <input type="text"name="todo-list-task-text"
+    id="todo-list-task-text" placeholder="ВАША ЗАДАЧА НА 1ДЕНЬ">
+    <Button id="todo-list-task-add-btn">дабавит</Button>
+    <select name="todo-list-task-filter" id="todo-list-task-filter"></select>
+    <option value="0">Все</option>
+    <option value="1">Выполненные</option>
+    <option value="2">Не Выполненные</option>   
+     </select>
+          <ul class="todo-list" id="todo-list">
+                 <li class="todolist-tot completed">
+                     <span>
+                          <input type="checkbox" id="todolist-checkbox-1">
+                           
+                           <label for="todolist-checkbox-1">Сделать Д3
+                           </label>
+                     </span>
+                        <button class="todolist-remove-todo">Delete</button>
+                 </li>
+          </ul>         
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="./main.js"></script>
+</html>
